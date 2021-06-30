@@ -1,9 +1,9 @@
 const router = require('express').Router()
 const { authRouter } = require('./auth.router')
-// const { usersRouter } = require('./users.router')
+const { gamesRouter } = require('./games.router')
 
 router
   .use('/auth', authRouter)
-  // .use('/users', usersRouter)
+  .use('/games', gamesRouter)
 
 exports.router = router

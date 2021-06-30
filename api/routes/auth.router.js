@@ -3,7 +3,7 @@ const { checkAuth } = require('../../utils')
 const {
   signup,
   login,
-  whoami
+  whoami,
 } = require('../controllers/auth.controller')
 
 authRouter
